@@ -1,8 +1,5 @@
 /// https://en.wikipedia.org/wiki/Quickselect
 pub fn quick_select(xs: &mut [i32], k: usize) -> i32 {
-    if k == 1 && xs.len() == 1 {
-        return xs[0];
-    }
     let n = xs.len();
     let pivot = xs[n - 1];
     let mut i = 0;
